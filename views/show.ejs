@@ -1,0 +1,29 @@
+<%- include('header.ejs'); %>
+
+    <title>
+        <%=post.heading%>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/show.css">
+    <div class="cont">
+
+        <div class="video&head">
+            <h2>
+                <%=post.heading%>
+            </h2>
+            <iframe width="754" height="424" src="<%= post.video %>" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+            <p>
+                <%-post.para%>
+                <br>
+                <div id="buttons">
+                <button class="primary secondary" onclick="window.location.href=`http://localhost:3000/<%=post.heading%>/edit`">Edit Post</button>
+                    <form method="post" action="/<%=post.id%>?_method=DELETE" >    
+                        <button  class="primary">Delete Post</button>
+                    </form>
+                </div>
+                </p></div>
+        </div>

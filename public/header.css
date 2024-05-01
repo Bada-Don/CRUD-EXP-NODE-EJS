@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: transparent;
+    /* Red color like YouTube */
+    padding: 10px 0;
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+.search-bar input {
+    width: 18.75rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2rem 0rem 0rem 2rem;
+    outline: 0.5px solid grey;
+    background-color: transparent;
+}
+
+.search-bar button img {
+    width: 1.2rem;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar button {
+    outline: 0.5px solid grey;    
+    background-color: transparent;
+    border-radius: 0rem 2rem 2rem 0rem;
+    border: none;
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.profile-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-button img {
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 2rem;
+}

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/edit.css">
+<link rel="stylesheet" href="/show.css">
+
+<title>
+    Edit Post: <%=post.heading%>
+</title>
+<%- include('header.ejs'); %>
+<div class="cont">
+        <h1>Edit Your Post</h1>
+        <form method="post" action="/<%=post.id%>?_method=PATCH">
+            <div class="box4">
+                <label for="postheading">Edit Post Heading</label>
+                <textarea type="text" name="postheading" id="postheading"
+                    class="editinput"><%=post.heading%></textarea>
+            </div><br>
+            <div class="box3">
+                <label for="inputTag">Change Post Thumbnail</label>
+                <textarea type="text" name="postthumbnail" id="postthumbnail"
+                    class="editinput"><%=post.img%></textarea>
+            </div>
+            <br>
+            <div class="box2">
+                <label for="postpara">Edit Post Decription</label>
+                <textarea name="postpara" id="postpara" class="editinput"><%=post.para%></textarea>
+            </div>
+            <div class="box1">    
+                <button type="submit" id="save" class="primary">Save</button>
+            </div>
+        </form>
+    </div>

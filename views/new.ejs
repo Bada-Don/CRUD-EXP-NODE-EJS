@@ -1,0 +1,30 @@
+<%- include('header.ejs'); %>
+<link rel="stylesheet" href="new.css">
+<link rel="stylesheet" href="show.css">
+<div class="cont">
+    <h1>Create New Post</h1>
+    <form method="post" action="/">
+        <div class="box4">
+            <label for="postheading"> Post Heading</label>
+            <textarea type="text" name="postheading" id="postheading"
+                class="editinput"><%=post.heading%></textarea>
+        </div><br>
+        <div class="box3">
+            <label for="inputTag"> Post Thumbnail</label>
+            <textarea type="text" name="postthumbnail" id="postthumbnail"
+                class="editinput"><%=post.img%></textarea>
+        </div>
+        <br>
+        <div class="box2">
+            <label for="postpara"> Post Decription</label>
+            <textarea name="postpara" id="postpara" class="editinput"><%=post.para%></textarea>
+        </div>
+        <div class="box1">
+            <label for="postvideo"> Video Link</label>
+            <textarea name="postvideo" id="postvideo" class="editinput"><%=post.para%></textarea>
+        </div>
+        <div class="box0">    
+            <button type="submit" id="save" class="primary">Save</button>
+        </div>
+    </form>
+</div>

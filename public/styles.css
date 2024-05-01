@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    margin: 0;
+}
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.text{
+    width: 23.5rem;
+}
+h5{
+    height: fit-content;
+    width: fit-content;
+}
+#heading {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    display: block;
+    max-height: 4.4rem;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.thumbnail{
+    width: 23.5rem;
+    height: 12.5rem;
+    background-size: contain;
+    border-radius: 2rem;
+}
+button{
+    color: white;
+    background-color: transparent;
+}
+.primary{
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #a80000;
+    transition: ease-in-out 0.1s;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 1rem rgb(200, 93, 93);
+    margin: 2rem;
+}
+.primary:hover{
+    outline: white solid 2px;
+    background-color: #c90000;
+    scale: 1.05;
+}
+.secondary{
+    background-color: white;
+    color: black;
+}
+
+.secondary:hover{
+    outline: rgb(185, 0, 0) solid 2px;
+    background-color: #dfdfdf;
+    scale: 1.05;
+}
+.new-post{
+    z-index: 20;
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    outline: white solid 1px;
+}
+.card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #1e1e1e;
+    width: 27rem;
+    height: 18.75rem;
+    border-radius: 2rem;
+    transition: ease-in-out 0.1s;
+}
+.card:hover{
+    scale: 1.08;
+}

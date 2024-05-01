@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/styles.css">
+
+<%- include('header.ejs'); %>
+
+    <div class="container">
+
+        <% for(post of posts) { %>
+            <div class="card" onclick="window.location.href=`http://localhost:3000/<%=post.heading%>/show`">
+                <img class="thumbnail" src="<%=post.img%>" alt="" srcset="">
+                <div class="text">
+                    <h3 id="heading">
+                        <%=post.heading%>
+                    </h3>
+                </div>
+            </div>
+            <% } %>
+    </div>
+    <form action="/new" method="get">
+        <button class="primary new-post">New Post</button>
+    </form>
+
+    <!-- <div id="blur"></div> -->
